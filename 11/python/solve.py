@@ -30,11 +30,11 @@ def get_distance_one_axis(pair, axis=0, void_size=1):
 
 
 def get_space_distance(pairs, void_size=1):
-    dists = 0
+    distance = 0
     for pair in pairs:
-        dists += get_distance_one_axis(pair, axis=0, void_size=void_size)
-        dists += get_distance_one_axis(pair, axis=1, void_size=void_size)
-    return dists
+        distance += get_distance_one_axis(pair, axis=0, void_size=void_size)
+        distance += get_distance_one_axis(pair, axis=1, void_size=void_size)
+    return distance
 
 
 ans_1 = get_space_distance(pairs, void_size=2)
